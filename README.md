@@ -1,5 +1,5 @@
 ﻿# varianta_prezentare
 
-https://alinaneculai.github.io/proiect-agrocity/
+https://alinaneculai.github.io/Proiect_internship
 
-Varianta care a fost prezentata azi la sedinta.
+Varianta aproape finala
