@@ -1,0 +1,43 @@
+.asidebar-user-infos {
+  width: 100%;
+  .users-img {
+    img {
+      display: block;
+      margin: 10px auto;
+      width: 50%;
+      height: 50%;
+    }
+  }
+  .user-description {
+    text-align: center;
+    margin: 20px;
+  }
+
+  .contact-links {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    .fab {
+      font-size: 2rem;
+    }
+
+    .fa-linkedin {
+      background-color: white;
+      color: #0077b5;
+    }
+
+    .fa-facebook {
+      background-color: white;
+      color: #2d88ff;
+    }
+    .fa-github {
+      background-color: #000;
+      color: #ffff;
+    }
+  }
+}
+@media screen and (min-width: 600px) {
+  .asidebar-user-infos {
+    width: 30%;
+  }
+}

@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+html{
+    margin:0;
+    padding: 0;
+    font-family: Montserrat, sans-serif;
+} 
+
+@tailwind base;
+@tailwind components;
+
+@tailwind utilities;
+@tailwind screens;
+
+#nav-toggle{
+
+    padding: 0.75rem;
+    font-size:0.8rem;
+}
+
+#nav-firstPage{
+    width: 100%;
+    position: fixed;
+    transition: all 0.5s ease-in-out;
+    top: 0
+
+}
+
+@media only screen and (min-width: 800px){
+    .name-logo{
+        font-size: 1.7rem; 
+    }
+} 
+
+.line {
+    width: 7.5rem;
+    height: 0.18rem;
+    background-color: white;
+    margin: 6px 0;
+} 
+
+ .separator i {
+    color: white;
+    font-size: 2.2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+} 
+
+ .custom-line {
+    font-size: 1.6em;
+    width: 4em;
+    height: 0.15em;
+    background-color: #fff;
+    border-radius: 1rem;
+    border-color: #2c3e50;
+} 
+
+.divider-custom {
+    margin-right: 1.25rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divider-custom .divider-custom-line {
+    width: 100%;
+    max-width: 7rem;
+    height: 0.25rem;
+    background-color: #2c3e50;
+    border-radius: 1rem;
+    border-color: #2c3e50 !important;
+}
+
+.divider-custom .divider-custom-line:first-child {
+    margin-right: 1rem;
+}
+
+.divider-custom .divider-custom-line:last-child {
+    margin-left: 1rem;
+}
+
+.banana {
+    height: 7em;
+}
+
+.eq-col p {
+    flex-grow: 1;
+    flex-basis: 0;
+    text-align: center;
+}
+
+.members {
+    color: #2c3e50;
+}
+
+.name {
+    font-family: 'Roboto', sans-serif;
+    color: #2c3e50;
+    cursor: default;
+    letter-spacing: 0.1875rem;
+}
+
+.btn {
+    border-color: #2c3e50;
+    outline-style: none;
+}
+
+.btn:hover {
+    background-color: #2c3e50;
+    color: #ffffff;
+    transition: 0.5s;
+    outline: none;
+}
+
+.divider-custom {
+    margin-right: 1.25rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divider-custom .divider-custom-line {
+    width: 100%;
+    max-width: 7rem;
+    height: 0.25rem;
+    background-color: #2c3e50;
+    border-radius: 1rem;
+    border-color: #2c3e50 !important;
+}
+
+.divider-custom .divider-custom-line:first-child {
+    margin-right: 1rem;
+}
+
+.divider-custom .divider-custom-line:last-child {
+    margin-left: 1rem;
+}
+
+.members {
+    color: #2c3e50;
+}
+
+.btn-modal {
+    @apply font-bold py-2 px-2 rounded;
+}
+
+.btn-blue {
+    @apply bg-blue-500 text-white;
+}
+
+.btn-blue:hover {
+    @apply bg-blue-700;
+}
+
+.backdrop {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    overflow: auto;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+}
+
+.modal {
+    position: relative;
+    overflow: scroll;
+    background-color: rgba(238, 245, 255, 0.933);
+    margin: 10% auto;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    @apply absolute text-3xl cursor-pointer;
+    top: 0;
+    right: 0;
+}
+
+.profileImg {
+    margin-top: 20px;
+    border-radius: 10%;
+}
+
+.userDetails {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+eq-col p {
+    flex-grow: 1;
+    flex-basis: 0;
+    text-align: center;
+}
+
+@media screen and (max-width:375px){
+    .footerChart-container{
+        display: none;
+    }
+}
+
+@media screen and (max-width:600px){
+    .footerChart-container{
+        width: 25rem;
+        height: 8rem;
+        margin: auto;
+        height: auto;
+    }
+} 
+
+@media screen and (min-width:600px) and (max-width:1000px) {
+    .footerChart-container{
+        width:33rem;
+        height: 18rem;
+        margin: auto;
+        height: auto;
+    }
+} 
+@media screen and (min-width:1000px){
+    .footerChart-container{
+        width: 48rem;
+        height: 20rem;
+        margin: auto;
+        height: auto;
+    }
+} 
+@media screen and (max-width:475px){
+    #menu-firstPage{
+       display: none;
+    }
+}
+@media screen and (min-width:600px) and (max-width:1000px) {
+    #main-banana{
+        width:12rem;
+        height: 14rem;
+        margin: auto;
+        height: auto;
+    }
+} 
+@media only screen and (max-width:600px){
+    #main-banana{
+        margin: auto;
+        width: 10rem;
+        height: 16rem;
+        padding-top: 2rem;
+    }
+}
+@media only screen and (min-width:1000px){
+    #main-banana{
+        margin: auto;
+        width: 14rem;
+        height: 18rem;
+    }
+}

@@ -1,0 +1,10 @@
+$navbar: rgb(42, 67, 101);
+$navbar-text: rgb(226, 232, 240);
+$navbar-text-hover: #0e0a0b;
+
+@mixin flex($content, $item, $direction) {
+  display: flex;
+  justify-content: $content;
+  align-items: $item;
+  flex-direction: $direction;
+}

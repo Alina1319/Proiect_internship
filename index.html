@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANANAS in P.Y.J.A.M.A.S</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/e6a045db1b.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="resources/css/styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet"/>
+    <script src="node_modules/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0" defer></script>
+    <link rel="stylesheet" href="resources/css/main.css">
+    <script type="text/javascript" src="data.json"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    <script type="text/javascript" src="./scripts/js/footergraph.js" defer></script>
+    <script type="text/javascript" src="./scripts/js/navbarScripts.js" defer></script>
+</head>
+
+<body>
+
+
+    <header class=" bg-teal-500 pb-12 pt-16 lg:pt-24">
+        <nav id='nav-firstPage'class=" flex justify-between flex-wrap items-center bg-blue-900 p-4 lg:p-4">
+            <div class="text-white items-center flex-shrink-0 flex  lg:ml-40 ">
+                <img class="h-12 w-10" src="./resources/images/115774671_209949103714017_267290865483648545_n-logo.png">
+                <a class=" name-logo font-semibold text-xl" href='#'>
+                    Bananas In P.Y.J.A.M.A.S
+                </a>
+            </div>
+
+            <button id="nav-toggle" class="bg-teal-500 mr-6 md:mr-24  sm:text-sm point-cursor items-center lg:hidden block hover:bg-teal-600 text-white font-semibold rounded-lg">
+                <span id="menu-firstPage" class=" font-semibold text-sm mr-1 ">
+                    MENU
+                </span>
+                <i class=" fa fa-bars " aria-hidden="true"></i>
+            </button>
+
+            <div class="flex-grow w-full lg:flex lg:items-center lg:w-auto hidden pt-6 lg:pt-0" id="menu-content">
+                <ul class="lg:flex justify-end flex-1 items-center">
+                    <li class="mr-3">
+                        <a class=" uppercase text-l text-white font-semibold inline-block lg:text-xl py-2 pr-8 hover:text-teal-500" href="#">
+                            Home
+                        </a>
+                    </li>
+                    <li class="mr-3">
+                        <a class=" uppercase text-l text-white font-semibold inline-block lg:text-xl py-2 mr-6 hover:text-teal-500" href="#members">
+                            Members
+                        </a>
+                    </li>
+                    <li class="mr-3">
+                        <a class=" uppercase text-l text-white font-semibold inline-block lg:text-xl py-2 hover:text-teal-500" href="#mainPage-footer">
+                            About us
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </nav>
+</header>
+
+    <div class="bg-teal-500 pb-32">
+        <div id="main-banana">
+            <img  src="./resources/images/banana.png" >
+          </div>
+        <div class="flex lg:flex-col text-white justify-evenly text-4xl pt-6 lg:pt-14 px-16 ">
+            <div class="flex flex-col font-bold lg:flex-row  md:text-5xl mt-4 pb-4 lg:text-6xl eq-col ">
+                <p>P.</p>
+                <p>Y.</p>
+                <p>J.</p>
+                <p>A.</p>
+                <p>M.</p>
+                <p>A.</p>
+                <p>S.</p>
+
+            </div>
+            <div class="flex flex-col lg:flex-row lg:mt-0 lg:text-2xl text-xl  font-medium eq-col mt-8">
+                <p>Php</p>
+                <p>Young</p>
+                <p>Javascript</p>
+                <p>Ambitious </p>
+                <p>Majestic</p>
+                <p>Adorable</p>
+                <p>Smart</p>
+            </div>
+            <div class="flex flex-col lg:flex-row lg:mt-0 lg:text-2xl text-xl font-medium  pt-2 eq-col mt-8">
+                <p>we love backend</p>
+                <p>that's how we are</p>
+                <p>this sh*t is weird</p>
+                <p>100%</p>
+                <p>damn we are</p>
+                <p>UwU</p>
+                <p>we hope we are</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- MODAL -->
+
+    <div id="usersPage" class="backdrop hidden">
+    </div>
+
+    <!-- MEMBRII -->
+
+    <h2 class="members page-section-heading text-center text-uppercase text-secondary mb-0 text-4xl mt-10 font-bold pt-6" id="members"> MEMBERS
+    </h2>
+
+    <div class="divider-custom">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon">
+            <img class="banana block rounded-full" src="./resources/images/banana_in_pijama.png">
+        </div>
+        <div class="divider-custom-line"></div>
+    </div>
+
+    <div class="container my-12 mx-auto px-4 md:px-12">
+        <div class="flex flex-wrap -mx-1 lg:-mx-4">
+
+            <!--Person-->
+            <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
+
+                <!--Column-->
+                <article class="overflow-hidden rounded-lg shadow-lg modal-open">
+                    <img src="resources/images/Alina.jpg" class="photo block h-auto w-full "/>
+                    <div class="flex-row items-center justify-between leading-none p-2 md:p-4 text-center">
+                        <h1 class="name no-underline text-black text-2xl">
+                            <a href="components/internPage/alina.html">Alina Neculai</a>
+                        </h1>
+                        <a href="/components/internPage/alina.html" title="alina.html">
+                            <button class="btn  border border-4 rounded py-2 px-4 m-2">
+                                <i class="far fa-eye pr-2"></i>
+                                View profile
+                            </button>
+                        </a>
+                    </div>
+                </article>
+            </div>
+            <!--END Column-->
+            <!--END Person-->
+
+
+            <!--Person-->
+            <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3 ">
+                <!--Column-->
+                <article class="overflow-hidden rounded-lg shadow-lg ">
+                    <img src="./resources/images/Nicoleta.jpg" class="photo block h-auto w-full " />
+                    <div class="flex-row items-center justify-between leading-none p-2 md:p-4 text-center">
+                        <h1 class="name no-underline text-black text-2xl">
+                            <a href="components/internPage/nicoleta.html">Nicoleta Chirigiu</a>
+                        </h1>
+                        <a href="/components/internPage/nicoleta.html" title="nicoleta.html">
+                            <button class="btn  border border-4 rounded py-2 px-4 m-2">
+                                <i class="far fa-eye pr-2"></i>
+                                View profile
+                            </button>
+                        </a>
+                    </div>
+                </article>
+            </div>
+            <!--END Column-->
+            <!--END Person-->
+
+
+            <!--Person-->
+            <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3 ">
+                <!--Column-->
+                <article class="overflow-hidden rounded-lg shadow-lg">
+                    <img src="./resources/images/Andrei.jpg" class="photo block h-auto w-full " />
+                    <div class="flex-row items-center justify-between leading-none p-2 md:p-4 text-center ">
+                        <h1 class="name no-underline text-black text-2xl">
+                            <a href="components/internPage/andrei.html">Andrei Stancu</a>
+                        </h1>
+                        <a href="/components/internPage/andrei.html" title="andrei.html">
+                            <button class="btn  border border-4 rounded py-2 px-4 m-2">
+                                <i class="far fa-eye pr-2"></i>
+                                View profile
+                            </button>
+                        </a>
+                    </div>
+                </article>
+            </div>
+            <!--END Column-->
+            <!--END Person-->
+
+
+
+            <!--Person-->
+            <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3 ">
+                <!--Column-->
+                <article class="overflow-hidden rounded-lg shadow-lg ">
+                    <img src="./resources/images/Robert.jpg" class="photo block h-auto w-full " />
+                    <div class="flex-row items-center justify-between leading-none p-2 md:p-4 text-center ">
+                        <h1 class="name no-underline text-black text-2xl">
+                            <a href="components/internPage/robert.html">Robert Chirila</a>
+                        </h1>
+                        <a href="/components/internPage/robert.html" title="robert.html">
+                            <button class="btn  border border-4 rounded py-2 px-4 m-2">
+                                <i class="far fa-eye pr-2"></i>
+                                View profile
+                            </button>
+                        </a>
+                    </div>
+                </article>
+            </div>
+            <!--END Column-->
+            <!--END Person-->
+
+
+
+            <!--Person-->
+            <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3 ">
+                <!--Column-->
+                <article class="overflow-hidden rounded-lg shadow-lg ">
+                    <img src="./resources/images/Vicentiu.png" class="photo block h-auto w-full " />
+                    <div class="flex-row items-center justify-between leading-none p-2 md:p-4 text-center ">
+                        <h1 class="name no-underline text-black text-2xl">
+                            <a href="components/internPage/vicentiu.html">Vicentiu Bota</a>
+                        </h1>
+                        <a href="/components/internPage/vicentiu.html" title="vicentiu.html">
+                            <button class="btn  border border-4 rounded py-2 px-4 m-2">
+                                <i class="far fa-eye pr-2"></i>
+                                View profile
+                            </button>
+                        </a>
+                    </div>
+                </article>
+            </div>
+            <!--END Column-->
+            <!--END Person-->
+
+
+
+            <!--Person-->
+            <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3 ">
+                <!--Column-->
+                <article class="overflow-hidden rounded-lg shadow-lg ">
+                    <img src="./resources/images/Marian.jpg" class="photo block h-auto w-full " />
+                    <div class="flex-row items-center justify-between leading-none p-2 md:p-4 text-center ">
+                        <h1 class="name no-underline text-black text-2xl">
+                            <a href="components/internPage/marian.html">Marian Nechifor</a>
+                        </h1>
+                        <a href="/components/internPage/marian.html" title="marian.html">
+                            <button class="btn  border border-4 rounded py-2 px-4 m-2">
+                                <i class="far fa-eye pr-2"></i>
+                                View profile
+                            </button>
+                        </a>
+                    </div>
+                </article>
+            </div>
+            <!--END Column-->
+            <!--END Person-->
+
+        </div>
+    </div>
+
+       <!-- Footer-->
+    <footer class=" w-100 bg-blue-900 text-center uppercase pb-6" id="mainPage-footer">
+        <p class=" font-semibold  text-gray-200 text-4xl lg:text-4xl text-center pt-12 pb-6 ">About us</p>
+        <p class= "text-xl pb-10  text-gray-200 font-semi-bold mx-8">Graficul cu media skill-urilor pe echipa</p>
+
+        <div class="footerChart-container">
+            <canvas id="footerChart" class="mx-auto"></canvas>
+        </div>
+        <p class=" text-center  text-gray-200 uppercase font-semibold md:m-3 text-3xl lg:pt-5 lg:text-4xl mx-8 pt-8 " id="wegood"> We're good, ask our moms</p>
+        <p class=" text-sm text-white pb-10"> Copyright &#169; 2020 AgroCity</p>
+        
+    </footer>
+</body>
+
+</html>

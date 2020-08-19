@@ -1,0 +1,321 @@
+const userData = [
+  {
+    "id": 1,
+    "name": "Alina Neculai",
+    "description": "Buna, sunt Alina, am 25 de ani, sunt din Constanta si in prezent studiez marketing in Anglia. Am fost mereu atrasa de tehnologie si in special de web development dar nu am avut niciodata curajul sa ma apuc. Asa ca in ultimele 3 luni m-am hotarat sa invat HTML, CSS si putin JavaScript, si de atunci doar cu asta imi ocup timpul. Imi plac masinile (as vrea o Tesla:car:) cititul (in special carti de dezvoltare personala) si gaming-ul.",
+    "avatar": "resources/images/Alina.jpg",
+    "skillMeter": {
+      "skillM1": 6,
+      "skillM2": 6,
+      "skillM3": 6,
+      "skillM4": 2,
+      "skillM5": 1,
+      "skillM6": 1,
+      "skillM7": 1,
+      "skillM8": 5
+    },
+    "skillMeterSoft": {
+      "skillM1": 8,
+      "skillM2": 8,
+      "skillM3": 9,
+      "skillM4": 7,
+      "skillM5": 7,
+      "skillM6": 7,
+      "skillM7": 5,
+      "skillM8": 7
+    },
+
+    "skils": {
+      "hardSkils": {
+        "skil1": "HTML",
+        "skil2": "CSS",
+        "skil3": "Tailwind CSS",
+        "skil4": "JavaScript",
+        "skil5": "Vue.js",
+        "skil6": "PHP",
+        "skil7": "Laravel",
+        "skil8": "Databases"
+      },
+      "softSkils": {
+        "skil1": "Comunicare",
+        "skil2": "Spirit de EChipa",
+        "skil3": "Punctualitate",
+        "skil4": "Time Management",
+        "skil5": "Flexibilitate",
+        "skil6": "Creativitate",
+        "skil7": "Skilluri Culinare",
+        "skil8": "Design"
+      }
+    },
+    "links": {
+      "git": "git",
+      "linkedin": "linkedin",
+      "facebook": "facebook"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Nicoleta Chirigiu",
+    "description": "Hello, numele meu este Nicoleta,am 24 de ani, locuiesc in București, am terminat facultatea de Roboti Industriali, am lucrat aproximativ 1 an ca FEA Engineer, sunt pasionata de RPA, AI, psihologie si evident web development, in special partea de frontend, ador animalele, preferatul meu alpaca",
+    "avatar": "resources/images/Nicoleta.jpg",
+    "skillMeter": {
+      "skillM1": 9,
+      "skillM2": 9,
+      "skillM3": 5,
+      "skillM4": 8,
+      "skillM5": 6,
+      "skillM6": 3,
+      "skillM7": 1,
+      "skillM8": 5
+    },
+    "skillMeterSoft": {
+      "skillM1": 8,
+      "skillM2": 8,
+      "skillM3": 8,
+      "skillM4": 8,
+      "skillM5": 10,
+      "skillM6": 8,
+      "skillM7": 3,
+      "skillM8": 5
+    },
+    "skils": {
+      "hardSkils": {
+        "skil1": "HTML",
+        "skil2": "CSS",
+        "skil3": "Tailwind CSS",
+        "skil4": "JavaScript",
+        "skil5": "Vue.js",
+        "skil6": "PHP",
+        "skil7": "Laravel",
+        "skil8": "Databases"
+      },
+      "softSkils": {
+        "skil1": "Comunicare",
+        "skil2": "Spirit de EChipa",
+        "skil3": "Punctualitate",
+        "skil4": "Time Management",
+        "skil5": "Flexibilitate",
+        "skil6": "Creativitate",
+        "skil7": "Skilluri Culinare",
+        "skil8": "Design"
+      }
+    },
+    "links": {
+      "git": "git",
+      "linkedin": "linkedin",
+      "facebook": "facebook"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Andrei Stancu",
+    "description": "Salut, eu sunt Andrei.Sunt din Slatina si am 23 de ani, am terminat facultatea de Inginerie Electrica din Craiova iar acum trec anul 2 master tot pe inginerie. Nu imi place foarte mult specializarea pe care am terminat asa ca dupa ce am luat licenta am zis sa incerc cu programarea. Web development a fost primul lucru de care m am apucat sa invat, nu stiam ce sa invat sau de unde sa invat deoarece n am mai avut tangente cu programarea, si nici prieteni programatori nu am, dupa m am apucat de java unde am invatat algoritmica si structuri de date.",
+    "avatar": "resources/images/Andrei.jpg",
+    "skillMeter": {
+      "skillM1": 8,
+      "skillM2": 8,
+      "skillM3": 4,
+      "skillM4": 6,
+      "skillM5": 1,
+      "skillM6": 3,
+      "skillM7": 1,
+      "skillM8": 5
+    },
+    "skillMeterSoft": {
+      "skillM1": 8,
+      "skillM2": 8,
+      "skillM3": 10,
+      "skillM4": 10,
+      "skillM5": 10,
+      "skillM6": 8,
+      "skillM7": 7,
+      "skillM8": 8
+    },
+    "skils": {
+      "hardSkils": {
+        "skil1": "HTML",
+        "skil2": "CSS",
+        "skil3": "Tailwind CSS",
+        "skil4": "JavaScript",
+        "skil5": "Vue.js",
+        "skil6": "PHP",
+        "skil7": "Laravel",
+        "skil8": "Databases"
+      },
+      "softSkils": {
+        "skil1": "Comunicare",
+        "skil2": "Spirit de EChipa",
+        "skil3": "Punctualitate",
+        "skil4": "Time Management",
+        "skil5": "Flexibilitate",
+        "skil6": "Creativitate",
+        "skil7": "Skilluri Culinare",
+        "skil8": "Design"
+      }
+    },
+    "links": {
+      "git": "git",
+      "linkedin": "linkedin",
+      "facebook": "facebook"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Robert Chirila",
+    "description": "Salut! Eu sunt Robert, am 25 de ani locuiesc in Constanta am 173cm 63 kg ochi caprui si parul saten.Am terminat facultatea de prelucrarea petrolului si lucrez momentan la rafinaria Petromidia. Am inceput sa invat web development drept hobby si sper sa il pot transforma intr-un job. Imi place gaming-ul, filmele , serialele si muzica in mod excesiv.",
+    "avatar": "resources/images/Robert.jpg",
+    "skillMeter": {
+      "skillM1": 6,
+      "skillM2": 6,
+      "skillM3": 5,
+      "skillM4": 4,
+      "skillM5": 1,
+      "skillM6": 1,
+      "skillM7": 1,
+      "skillM8": 2
+    },
+    "skillMeterSoft": {
+      "skillM1": 8,
+      "skillM2": 8,
+      "skillM3": 8,
+      "skillM4": 7,
+      "skillM5": 6,
+      "skillM6": 6,
+      "skillM7": 10,
+      "skillM8": 6
+    },
+    "skils": {
+      "hardSkils": {
+        "skil1": "HTML",
+        "skil2": "CSS",
+        "skil3": "Tailwind CSS",
+        "skil4": "JavaScript",
+        "skil5": "Vue.js",
+        "skil6": "PHP",
+        "skil7": "Laravel",
+        "skil8": "Databases"
+      },
+      "softSkils": {
+        "skil1": "Comunicare",
+        "skil2": "Spirit de EChipa",
+        "skil3": "Punctualitate",
+        "skil4": "Time Management",
+        "skil5": "Flexibilitate",
+        "skil6": "Creativitate",
+        "skil7": "Skilluri Culinare",
+        "skil8": "Design"
+      }
+    },
+    "links": {
+      "git": "git",
+      "linkedin": "linkedin",
+      "facebook": "facebook"
+    }
+  },
+  {
+    "id": 5,
+    "name": "Vicentiu Bota",
+    "description": "Ciao, sunt Vicentiu și locuiesc în Bologna (IT). Am 24 de ani și în martie am terminat facultatea de Computer Science în Bologna. Sunt pasionat de software development și backend web development. Non tech îmi place foarte mult sa gătesc",
+    "avatar": "resources/images/Vicentiu.png",
+    "skillMeter": {
+      "skillM1": 7,
+      "skillM2": 6,
+      "skillM3": 3,
+      "skillM4": 7,
+      "skillM5": 3,
+      "skillM6": 7,
+      "skillM7": 6,
+      "skillM8": 8
+    },
+    "skillMeterSoft": {
+      "skillM1": 7,
+      "skillM2": 7,
+      "skillM3": 9,
+      "skillM4": 8,
+      "skillM5": 9,
+      "skillM6": 7,
+      "skillM7": 9,
+      "skillM8": 7
+    },
+    "skils": {
+      "hardSkils": {
+        "skil1": "HTML",
+        "skil2": "CSS",
+        "skil3": "Tailwind CSS",
+        "skil4": "JavaScript",
+        "skil5": "Vue.js",
+        "skil6": "PHP",
+        "skil7": "Laravel",
+        "skil8": "Databases"
+      },
+      "softSkils": {
+        "skil1": "Comunicare",
+        "skil2": "Spirit de EChipa",
+        "skil3": "Punctualitate",
+        "skil4": "Time Management",
+        "skil5": "Flexibilitate",
+        "skil6": "Creativitate",
+        "skil7": "Skilluri Culinare",
+        "skil8": "Design"
+      }
+    },
+    "links": {
+      "git": "git",
+      "linkedin": "linkedin",
+      "facebook": "facebook"
+    }
+  },
+  {
+    "id": 6,
+    "name": "Marian Nechifor",
+    "description": "Salutare,Eu sunt Marian, locuiesc in Iasi, am 19 ani, am terminat anul 1 la Facultatea de Automatizari si Calculatoare - Calculatoare si Tehnologia Informatiei si am facut voluntariat ultimii 4 ani la asociatii din sfera de educatie si dezvoltare a tinerilor.Sunt pasionat de ML si ce inseamna partea de back-end, baze de date, ultimul an am invatat mai mult c, c++ si python.",
+    "avatar": "resources/images/Marian.jpg",
+    "skillMeter": {
+      "skillM1": 5,
+      "skillM2": 4,
+      "skillM3": 5,
+      "skillM4": 1,
+      "skillM5": 1,
+      "skillM6": 1,
+      "skillM7": 1,
+      "skillM8": 1
+    },
+    "skillMeterSoft": {
+      "skillM1": 7,
+      "skillM2": 7,
+      "skillM3": 9,
+      "skillM4": 7,
+      "skillM5": 9,
+      "skillM6": 5,
+      "skillM7": 4,
+      "skillM8": 3
+    },
+    "skils": {
+      "hardSkils": {
+        "skil1": "HTML",
+        "skil2": "CSS",
+        "skil3": "Tailwind CSS",
+        "skil4": "JavaScript",
+        "skil5": "Vue.js",
+        "skil6": "PHP",
+        "skil7": "Laravel",
+        "skil8": "Databases"
+      },
+      "softSkils": {
+        "skil1": "Comunicare",
+        "skil2": "Spirit de EChipa",
+        "skil3": "Punctualitate",
+        "skil4": "Time Management",
+        "skil5": "Flexibilitate",
+        "skil6": "Creativitate",
+        "skil7": "Skilluri Culinare",
+        "skil8": "Design"
+      }
+    },
+    "links": {
+      "git": "git",
+      "linkedin": "linkedin",
+      "facebook": "facebook"
+    }
+  }
+]
