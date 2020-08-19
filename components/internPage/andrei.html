@@ -1,11 +1,97 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>ANDREI</title>
+	<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Andrei Stancu</title>
+    <link rel="stylesheet" href="./styles/internPage.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/a076d05399.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0" defer></script>
 </head>
 <body>
 
+	<div id="usersPage" class="backdrop">
+		<nav class="navbar" id="navBar">
+			
+			<div class="topnav">
+				<img src="../../resources/images/banana.png"
+					 alt="banana in pijamas logo"
+					 class="logo"/>
+				<a
+					href="#"
+					class="go-top-page"
+					id="goTopPageBtn"
+					title="Go to top page">
+						Go to the top page
+				</a>
+				<button class="menuBtn" id="menuBtn">
+					<i class="material-icons">&#xe5d2;</i>
+				</button>
+			</div>
 
+			<ul class="hiddenLinks" id="navLinks">
+				<a href="../../index.html" title="Go to members page">
+					Members page
+				</a>
+				<a href="#" title="Go to homepage">
+					Home Page
+				</a>
+			</ul>
+		</nav>
+	
+		<div class="mainSection">
+
+			<aside class="asidebar-user-infos">	
+				<div class="usersPage-title">
+					Andrei Stancu
+				</div>
+				<div class="users-img">
+					<img src="../../resources/images/Andrei.jpg" alt="andrei profile picture"/>
+				</div>
+				<p class="user-description">
+					Salut, eu sunt Andrei.Sunt din Slatina si am 23 de ani, am terminat facultatea de Inginerie Electrica din Craiova iar acum trec anul 2 master tot pe inginerie. Nu imi place foarte mult specializarea pe care am terminat asa ca dupa ce am luat licenta am zis sa incerc cu programarea. Web development a fost primul lucru de care m am apucat sa invat, nu stiam ce sa invat sau de unde sa invat deoarece n am mai avut tangente cu programarea, si nici prieteni programatori nu am, dupa m am apucat de java unde am invatat algoritmica si structuri de date.
+				</p>
+				<div class="contact-links">
+					<a href="#" class="contact-link-git">
+						<i class="fab fa-github"></i>
+					</a>
+					<a href="#" class="contact-link-linkedin">
+						<i class="fab fa-linkedin"></i>
+					</a>
+					<a href="#" class="contact-link-facebook">
+						<i class="fab fa-facebook"></i>
+					</a>
+				</div>
+			</aside>
+
+			<section class="section-user-skills">	
+				
+				<div class="usersPage-description bg-orange-300">
+					On this page you will find the evolution during the internship
+				</div>
+				
+				<div class="charts">
+					<div class="softSkillsUser align-charts">
+						<div class="skillsTitle">
+							Soft skills evolution
+						</div>
+						<canvas id="chartSkillsAverage" class="chart"></canvas>
+					</div>
+					<div class="hardSkillsUser align-charts">
+						<div class="skillsTitle">
+							Hard skills evolution
+						</div>
+						<canvas id="chartSkillsAverage" class="chart"></canvas>
+					</div>
+				</div>
+			
+			</section>
+		</div>
+	</div>
 
 	<script src="../../scripts/js/internPageScripts.js" type="text/javascript" charset="utf-8" defer></script>
 	<script type="module">

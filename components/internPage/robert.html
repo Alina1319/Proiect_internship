@@ -1,9 +1,97 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>ROBERT</title>
+	<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Robert Chirila</title>
+    <link rel="stylesheet" href="./styles/internPage.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/a076d05399.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0" defer></script>
 </head>
 <body>
+
+	<div id="usersPage" class="backdrop">
+		<nav class="navbar" id="navBar">
+			
+			<div class="topnav">
+				<img src="../../resources/images/banana.png"
+					 alt="banana in pijamas logo"
+					 class="logo"/>
+				<a
+					href="#"
+					class="go-top-page"
+					id="goTopPageBtn"
+					title="Go to top page">
+						Go to the top page
+				</a>
+				<button class="menuBtn" id="menuBtn">
+					<i class="material-icons">&#xe5d2;</i>
+				</button>
+			</div>
+
+			<ul class="hiddenLinks" id="navLinks">
+				<a href="../../index.html" title="Go to members page">
+					Members page
+				</a>
+				<a href="#" title="Go to homepage">
+					Home Page
+				</a>
+			</ul>
+		</nav>
+	
+		<div class="mainSection">
+
+			<aside class="asidebar-user-infos">	
+				<div class="usersPage-title">
+					Robert Chirila 
+				</div>
+				<div class="users-img">
+					<img src="../../resources/images/Robert.jpg" alt="alina profile picture"/>
+				</div>
+				<p class="user-description">
+					Salut! Eu sunt Robert, am 25 de ani locuiesc in Constanta am 173cm 63 kg ochi caprui si parul saten.Am terminat facultatea de prelucrarea petrolului si lucrez momentan la rafinaria Petromidia. Am inceput sa invat web development drept hobby si sper sa il pot transforma intr-un job. Imi place gaming-ul, filmele , serialele si muzica in mod excesiv.
+				</p>
+				<div class="contact-links">
+					<a href="#" class="contact-link-git">
+						<i class="fab fa-github"></i>
+					</a>
+					<a href="#" class="contact-link-linkedin">
+						<i class="fab fa-linkedin"></i>
+					</a>
+					<a href="#" class="contact-link-facebook">
+						<i class="fab fa-facebook"></i>
+					</a>
+				</div>
+			</aside>
+
+			<section class="section-user-skills">	
+				
+				<div class="usersPage-description bg-orange-300">
+					On this page you will find the evolution during the internship
+				</div>
+				
+				<div class="charts">
+					<div class="softSkillsUser align-charts">
+						<div class="skillsTitle">
+							Soft skills evolution
+						</div>
+						<canvas id="chartSkillsAverage" class="chart"></canvas>
+					</div>
+					<div class="hardSkillsUser align-charts">
+						<div class="skillsTitle">
+							Hard skills evolution
+						</div>
+						<canvas id="chartSkillsAverage" class="chart"></canvas>
+					</div>
+				</div>
+			
+			</section>
+		</div>
+	</div>
 
 	<script src="../../scripts/js/internPageScripts.js" type="text/javascript" charset="utf-8" defer></script>
 	<script type="module">
