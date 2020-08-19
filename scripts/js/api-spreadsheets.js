@@ -28,7 +28,8 @@ export function getDataFromSpreadsheet(url) {
 function createChart(softS, hardS) {
   
   var ctx = document.getElementById('chartSkillsAverage').getContext('2d');
-
+  var ctx2 = document.getElementById('chartSkillsAverageHard').getContext('2d');
+  
   new Chart(ctx, {
     type: 'line',
     data: {
@@ -43,17 +44,35 @@ function createChart(softS, hardS) {
         'rgba(255, 0, 0, 1)'
         ],
         borderWidth: 2
-        }, {
-        label: 'Hard skills',
+        }]
+    },
+    options: {
+      responsive: true,
+      scales: {
+        yAxes: [{
+          ticks: {
+            beginAtZero: true
+          }
+        }]
+      }
+    }
+  });
+
+  new Chart(ctx2, {
+    type: 'line',
+    data: {
+      labels: ['Week1', 'Week2', 'Week3', 'Week4'],
+      datasets: [{
+        label: 'Hard Skills',
         data: hardSkills,
         backgroundColor: [
         'rgba(255, 255, 255, 0)'
         ],
         borderColor: [
-        'rgba(0, 0, 255, 1)'
+        'rgba(255, 0, 0, 1)'
         ],
         borderWidth: 2
-      }]
+        }]
     },
     options: {
       responsive: true,
