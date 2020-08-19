@@ -25,8 +25,6 @@ export function getDataFromSpreadsheet(url) {
    });
 }
 
-
-// TODO: EXPORT createChart and create charts.js
 function createChart(softS, hardS) {
   
   var ctx = document.getElementById('chartSkillsAverage').getContext('2d');
@@ -45,7 +43,7 @@ function createChart(softS, hardS) {
         'rgba(255, 0, 0, 1)'
         ],
         borderWidth: 2
-      }, {
+        }, {
         label: 'Hard skills',
         data: hardSkills,
         backgroundColor: [
@@ -58,7 +56,7 @@ function createChart(softS, hardS) {
       }]
     },
     options: {
-      responsive: false,
+      responsive: true,
       scales: {
         yAxes: [{
           ticks: {

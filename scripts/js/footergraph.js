@@ -1,5 +1,3 @@
-
-
 //data from google sheets
 
 let vectorSoft = [];
