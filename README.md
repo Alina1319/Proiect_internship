@@ -1,3 +1,3 @@
 ﻿# varianta_prezentare
 
-https://esteramaftei.github.io/final/
+https://alinaneculai.github.io/Proiect_internship/
