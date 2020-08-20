@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(252, 251, 251);
+  font-family: Montserrat, monospace;
+
+}
+
+// #usersPage {
+//   min-height: 100vh;
+//   width: 100vw;
+// }
+
+.hidden {
+  display: none;
+}
+
+
+@import "./navbar";
+@import "./asidebar";
+@import "./sectionsSkills";
+@import "./variables";
+
+@media screen and (min-width: 600px) {
+  .mainSection {
+   display:flex;
+   flex-direction: row;
+  }
+}
