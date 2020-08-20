@@ -18,4 +18,4 @@ menuBtn.addEventListener("click", () => {
 });
 
 
-console.log("_ internPageScripts.js LOADED _");
+console.log("_ intern_pageScripts.js LOADED _");
