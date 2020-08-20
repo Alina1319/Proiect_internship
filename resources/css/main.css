@@ -264,6 +264,31 @@ eq-col p {
     }
 }
 
-.resizeCard{
-    height: 2000px;
-    width: 2000px;}
+@media only screen and (max-width:600px){
+   
+    #description-letters{
+        display: none;
+
+    }
+}
+
+@media only screen and (max-width:767px){
+    .responsiveCard{
+             width:18rem;
+             margin:auto;
+             padding-bottom:2rem;
+    }
+ }
+
+
+ @media only screen and (max-width:400px){
+ 
+    #logo_navigation{
+    display: none;}
+    .name-logo{
+        font-size: 1rem;
+    }
+    #nav-toggle{
+        padding:0.4rem 0.5rem;
+    }
+}
