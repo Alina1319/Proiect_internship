@@ -2,6 +2,9 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: rgb(252, 251, 251);
+  font-family: Montserrat, monospace;
+
 }
 
 // #usersPage {
@@ -21,6 +24,7 @@ body {
 
 @media screen and (min-width: 600px) {
   .mainSection {
-    @include flex(center, center, row);
+   display:flex;
+   flex-direction: row;
   }
 }

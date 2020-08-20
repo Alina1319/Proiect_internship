@@ -3,6 +3,8 @@ body {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  background-color: #fcfbfb;
+  font-family: Montserrat, monospace;
 }
 
 .hidden {
@@ -10,30 +12,28 @@ body {
 }
 
 .navbar {
-  overflow: auto;
   background-color: #2a4365;
 }
 
 .navbar .topnav {
   max-height: 20%;
-  padding: 10px;
+  padding: 12px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+}
+
+.navbar .topnav .bananaHeader {
+  font-weight: 600;
+  font-size: 1.6rem;
+  margin: 0 !important;
 }
 
 .navbar .logo {
-  margin: 5px 0 0 5px;
+  margin: 5px 0 0 10px;
   max-width: 60px;
   max-height: 50px;
 }
@@ -43,16 +43,19 @@ body {
 }
 
 .navbar a {
-  color: #e2e8f0;
+  color: white;
   text-decoration: none;
-  font-family: sans-serif;
+  font-family: Montserrat;
   font-size: 1rem;
   padding: 4px;
   margin: 5px;
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin: 0 2rem;
 }
 
 .navbar a:hover {
-  color: #0e0a0b;
+  color: #38b2ac;
 }
 
 .menuBtn {
@@ -72,10 +75,14 @@ body {
       -ms-flex-direction: row;
           flex-direction: row;
   font-size: 1.5rem;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: 10px;
 }
 
 .menuBtn i {
   font-size: 1.5rem;
+  color: white;
 }
 
 .go-top-page {
@@ -116,7 +123,7 @@ body {
           flex-direction: column;
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 1000px) {
   .menuBtn {
     display: none;
   }
@@ -134,6 +141,9 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+  }
+  .navbar .logo {
+    margin: 5px 0 0 60px;
   }
   .navbar .hiddenLinks {
     display: block;
@@ -175,14 +185,17 @@ body {
 
 .asidebar-user-infos .users-img img {
   display: block;
-  margin: 10px auto;
+  margin: 50px auto 10px auto;
   width: 50%;
   height: 50%;
+  -webkit-box-shadow: 0 10px 10px -5px;
+          box-shadow: 0 10px 10px -5px;
+  color: #2a4365;
 }
 
 .asidebar-user-infos .user-description {
   text-align: center;
-  margin: 20px;
+  margin: 35px 30px 25px 30px;
 }
 
 .asidebar-user-infos .contact-links {
@@ -198,40 +211,69 @@ body {
 }
 
 .asidebar-user-infos .contact-links .fab {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 .asidebar-user-infos .contact-links .fa-linkedin {
-  background-color: white;
   color: #0077b5;
 }
 
-.asidebar-user-infos .contact-links .fa-facebook {
-  background-color: white;
-  color: #2d88ff;
+.asidebar-user-infos .contact-links .fa-facebook-square {
+  color: #1a0dab;
 }
 
-.asidebar-user-infos .contact-links .fa-github {
-  background-color: #000;
-  color: #ffff;
+.asidebar-user-infos .contact-links .fa-github-square {
+  color: #5f0249;
+}
+
+.asidebar-user-infos .contact-links .iconhover:hover {
+  -webkit-transform: translateY(-4px);
+          transform: translateY(-4px);
+  -webkit-transition: ease-in 0.2s;
+  transition: ease-in 0.2s;
 }
 
 @media screen and (min-width: 600px) {
   .asidebar-user-infos {
     width: 30%;
   }
+  .userNameHidden {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .asidebar-user-infos
+.users-img img {
+    margin: auto;
+    margin-top: 2rem;
+  }
+  .contact-links {
+    padding: 0.5rem 0 1.5rem 0;
+  }
+  .userNameHidden {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #474747;
+  }
 }
 
 .section-user-skills .usersPage-title {
-  font-size: 1.5rem;
+  font-size: 1.9rem;
   margin: 1.5rem 1rem;
   text-align: center;
+  font-weight: 500;
+  margin-top: 4rem;
+  color: #424242;
 }
 
 .section-user-skills .usersPage-description {
   text-align: center;
   margin: 0 0.5rem;
   font-size: 1.2rem;
+  padding-bottom: 2rem;
 }
 
 .section-user-skills .align-charts {
@@ -267,7 +309,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1400px) {
   .charts {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -288,17 +330,18 @@ body {
   }
 }
 
+@media screen and (max-width: 600px) {
+  .section-user-skills
+.usersPage-title {
+    display: none;
+  }
+}
+
 @media screen and (min-width: 600px) {
   .mainSection {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;

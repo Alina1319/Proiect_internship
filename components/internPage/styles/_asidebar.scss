@@ -3,36 +3,41 @@
   .users-img {
     img {
       display: block;
-      margin: 10px auto;
+      margin: 50px auto 10px auto;
       width: 50%;
       height: 50%;
+      box-shadow: 0 10px 10px -5px;
+      color: #2a4365;
     }
   }
   .user-description {
     text-align: center;
-    margin: 20px;
+    margin: 35px 30px 25px 30px;     
   }
 
   .contact-links {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    .fab {
-      font-size: 2rem;
+
+
+    .fab{
+      font-size: 1.8rem;
     }
 
     .fa-linkedin {
-      background-color: white;
       color: #0077b5;
     }
 
-    .fa-facebook {
-      background-color: white;
-      color: #2d88ff;
+    .fa-facebook-square {
+      color: #1a0dab;;
     }
-    .fa-github {
-      background-color: #000;
-      color: #ffff;
+    .fa-github-square {
+      color: rgb(95, 2, 73);
+    }
+    .iconhover:hover{
+      transform: translateY(-4px);
+      transition: ease-in 0.2s;
     }
   }
 }
@@ -40,4 +45,25 @@
   .asidebar-user-infos {
     width: 30%;
   }
+  .userNameHidden{
+    display: none;
+}}
+
+@media screen and (max-width: 600px) {
+  .asidebar-user-infos
+  .users-img img{
+    margin:auto;
+    margin-top: 2rem;
+  } 
+  .contact-links{
+   padding:0.5rem 0 1.5rem 0;
+  }
+  .userNameHidden{
+    text-align: center;
+    margin-top: 2rem;
+    font-size:1.3rem;
+    font-weight: 500;
+    color:rgb(71, 71, 71);
+  }
+  
 }
