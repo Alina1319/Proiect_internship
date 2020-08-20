@@ -208,6 +208,12 @@ eq-col p {
     .footerChart-container{
         display: none;
     }
+    #skills-average{
+        display: none;
+    }
+    #wegood{
+        padding-bottom: 2rem;
+    }
 }
 
 @media screen and (max-width:600px){
